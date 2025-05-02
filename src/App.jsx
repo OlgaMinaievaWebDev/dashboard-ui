@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
-import Account from "./pages/Account";
+import Accounts from "./pages/Accounts";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
 
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="account" element={<Account />} />
+          <Route path="accounts" element={<Accounts />} />
         </Route>
       </Routes>
     </BrowserRouter>

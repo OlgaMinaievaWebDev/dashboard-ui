@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom"
 import Header from "./Header"
-import Tabs from "./Tabs"
+import Navbar from "./Navbar";
 
 function Layout() {
  return (
-   <div className="min-h-screen flex flex-col bg-oxford-blue text-white">
+   <div className="min-h-screen flex flex-col bg-red-700 text-white  px-12 py-6">
      <Header />
-     <div className=" bg-oxford-blue shadow-sm px-4 py-2">
-       <Tabs />
+     <div className="px-4 py-2">
+       <Navbar />
      </div>
      <main className="flex-grow p-6">
        <Outlet />
