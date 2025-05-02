@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+body {
+  box-sizing: border-box;
+}
+@theme {
+  --font-display: "Roboto", sans-serif;
+  --color-azure: #3B83F5;
+  --color-oxford-blue: #1E2234;
+  --color-space-cadet: #252A3D;
+  --color--cadet-gray: #7B94A6ff;
+  --color-rich-black: #0B0E16;
+  --color-jade: #37B073ff;
+  --color-auburn: #AD413Dff;
+  --color-satin-sheen-gold: #B79F54ff;
+  --color-platinum: #D0D5D9ff;
+}
