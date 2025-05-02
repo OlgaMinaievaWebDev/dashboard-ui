@@ -3,6 +3,17 @@
 body {
   box-sizing: border-box;
 }
+
+/* hide scrollbar but allow scroll */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 @theme {
   --font-display: "Roboto", sans-serif;
   --color-azure: #3B83F5;
