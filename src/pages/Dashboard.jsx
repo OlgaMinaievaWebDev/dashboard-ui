@@ -2,13 +2,11 @@ import Tabs from "../components/Tabs"
 
 function Dashboard() {
  return (
-  <div>
-   <h1>I am a Dashboard</h1>
    <div>
-    <Tabs/>
+     <h2 className="text-xl font-semibold mb-4">I am a Dashboard</h2>
+     {/* Your dashboard content */}
    </div>
-  </div>
- )
+ );
 }
 
 export default Dashboard
