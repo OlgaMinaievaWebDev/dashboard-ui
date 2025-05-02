@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 function Layout() {
  return (
-   <div className="min-h-screen flex flex-col bg-red-700 text-white  px-12 py-6">
+   <div className="min-h-screen flex flex-col bg-oxford-blue text-white  px-12 py-6">
      <Header />
      <div className="px-4 py-2">
        <Navbar />
