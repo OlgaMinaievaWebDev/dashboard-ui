@@ -6,8 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function Navbar() {
   const scrollRef = useRef(null);
 
- // Function to handle scrolling left or right
-  // It scrolls the tabs container by a fixed amount (100px) in the specified direction
+  // Function to handle scrolling left or right
   const scroll = (dir) => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
@@ -17,8 +16,7 @@ export default function Navbar() {
     }
   };
 
-  // List of routes to disable for navigation for this project
-  // These routes will have the same background as inactive tabs and will not navigate to the page when clicked 
+  // List of routes to disable for navigation
   const unavailableTabs = [
     "/brokers",
     "/submissions",
@@ -29,11 +27,10 @@ export default function Navbar() {
     "/admin/3",
     "/admin/4",
     "/admin/5",
-  ]; 
+  ];
 
   return (
-    <div className=" text-white p-4 space-y-4">
-    
+    <div className="text-white p-4 space-y-4">
       <div className="flex items-center gap-2">
         <div
           ref={scrollRef}
@@ -41,8 +38,7 @@ export default function Navbar() {
         >
           {tabsData.map((tab) => {
             const Icon = tab.icon;
-            // Check if the tab's route is in the unavailableTabs array
-           const isTabDisabled = unavailableTabs.includes(tab.to); 
+            const isTabDisabled = unavailableTabs.includes(tab.to); // Check if the tab is disabled
 
             return (
               <NavLink
@@ -51,8 +47,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `flex items-center gap-2 px-3 py-2 rounded-full text-sm whitespace-nowrap hover:bg-[#1f2630] cursor-pointer ${
                     isTabDisabled
-                  ? "bg-[#161B22] cursor-not-allowed"
-                  // Disabled tab has same bg as inactive tabs
+                      ? "" // No style changes for disabled tabs
                       : isActive
                       ? "bg-blue-600"
                       : "bg-[#161B22]"
@@ -60,8 +55,7 @@ export default function Navbar() {
                 }
                 onClick={(e) => {
                   if (isTabDisabled) {
-                   e.preventDefault();
-                   // Prevent navigation if tab is disabled
+                    e.preventDefault(); // Prevent navigation if tab is disabled
                   }
                 }}
               >
@@ -69,7 +63,9 @@ export default function Navbar() {
                   <>
                     <Icon
                       size={18}
-                      color={isTabDisabled || isActive ? "#FFFFFF" : "#3B82F6"} 
+                      color={
+                        isTabDisabled || !isActive ? "#3B82F6" : "#FFFFFF" // Blue icon for disabled tabs
+                      }
                     />
                     <span className="text-white">{tab.name}</span>
                   </>
@@ -77,11 +73,9 @@ export default function Navbar() {
               </NavLink>
             );
           })}
-     </div>
+        </div>
 
         {/* Scroll buttons */}
-        {/* These buttons allow the user to scroll the tabs left or right */}
-     
         <button onClick={() => scroll("left")} className="p-1">
           <ChevronLeft size={20} />
         </button>
