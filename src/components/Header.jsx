@@ -1,6 +1,6 @@
 function Header() {
  return (
-   <header className="flex justify-between mr-0 items-center bg-white p-4 shadow-md font-display">
+   <header className="flex justify-between mr-0 items-center bg-oxford-blue p-4 shadow-md font-display">
      <h1>Hi Arthur, welcome! You have 12 open tasks.</h1>
      <div>
        <input type="text" placeholder="Search..." className="" />
