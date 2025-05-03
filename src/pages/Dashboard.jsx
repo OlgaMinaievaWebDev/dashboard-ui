@@ -1,8 +1,5 @@
 import WorkQueue from "../components/workQueue/WorkQueue";
-import Tabs from "../components/navbar/Navbar";
-
 import QuickActions from "../components/quickActions/QuickActions";
-
 import PortfolioGoals from "../components/portfolioGoals/PortfolioGoals";
 
 function Dashboard() {
@@ -19,7 +16,7 @@ function Dashboard() {
         <div className="md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-4">
           {/* Goals (20%) */}
           <div className="md:col-span-2 p-4  rounded-lg shadow-sm flex flex-col">
-            <PortfolioGoals />
+            <PortfolioGoals/>
           </div>
 
           {/* Quick actions stacked (20%) */}
