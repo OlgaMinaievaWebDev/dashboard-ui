@@ -1,10 +1,10 @@
-const tabs = [
+export  const tabs = [
   { label: "Assigned to me", count: 12 },
   { label: "Pending Review", count: 8 },
   { label: "Referrals", count: 3 },
 ];
 
-const data = [
+export const data = [
   {
     initials: "SM",
     name: "Sam Masters",
@@ -61,7 +61,7 @@ const data = [
   },
 ];
 
-const statusColors = {
+export const statusColors = {
   New: "bg-blue-500",
   "Pending Review": "bg-yellow-400",
   Completed: "bg-green-500",
