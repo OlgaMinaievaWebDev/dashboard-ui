@@ -1,7 +1,9 @@
 import WorkQueue from "../components/workQueue/WorkQueue";
 import Tabs from "../components/navbar/Navbar";
-import PortfolioGoals from "../components/portfolioGoals/PortfolioGoals";
+
 import QuickActions from "../components/quickActions/QuickActions";
+
+import PortfolioGoals from "../components/portfolioGoals/PortfolioGoals";
 
 function Dashboard() {
   return (
@@ -34,7 +36,7 @@ function Dashboard() {
 
       {/* Second row - full width */}
       <div className="bg-white p-4 rounded-lg shadow-sm">
-       
+      
       </div>
     </div>
   );
