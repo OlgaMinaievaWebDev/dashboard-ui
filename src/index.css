@@ -1,6 +1,7 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 body {
+  font-family: "Roboto Flex", sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,7 +16,7 @@ body {
 }
 
 @theme {
-  --font-display: "Roboto", sans-serif;
+
   --color-azure: #3B83F5;
   --color-oxford-blue: #1E2234;
   --color-space-cadet: #252A3D;

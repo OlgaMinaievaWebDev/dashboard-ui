@@ -1,4 +1,4 @@
-import Tabs from "../components/Navbar"
+import Tabs from "../components/Navbar/Navbar"
 
 function Dashboard() {
  return (
