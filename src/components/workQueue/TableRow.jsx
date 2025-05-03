@@ -2,11 +2,13 @@ import { MoreVertical } from "lucide-react";
 import StatusDot from "./StatusDot";
 import { statusColors } from "../../data/workQueue";
 
-export default function TableRow({ row }) {
+export default function TableRow({ row, className = "" }) {
   return (
-    <tr className="border-b border-gray-800 hover:bg-[#1f2630] transition">
+    <tr
+      className={`border-b border-gray-800 hover:bg-[#1f2630] transition ${className}`}
+    >
       <td className="flex items-center space-x-3 px-2 py-3">
-        <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-sm font-medium">
+        <div className="w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center text-sm font-medium text-white">
           {row.initials}
         </div>
         <span>{row.name}</span>
@@ -27,3 +29,4 @@ export default function TableRow({ row }) {
     </tr>
   );
 }
+

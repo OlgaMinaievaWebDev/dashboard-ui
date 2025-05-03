@@ -5,7 +5,7 @@ import QuickActions from "../components/quickActions/QuickActions";
 
 function Dashboard() {
   return (
-    <div className="grid gap-4 p-4">
+    <div className="grid gap-4">
       {/* First row */}
       <div className="grid grid-cols-1 md:grid-cols-10 gap-4">
         {/* Main content (60%) */}
