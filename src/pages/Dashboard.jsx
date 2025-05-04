@@ -1,6 +1,7 @@
 import WorkQueue from "../components/workQueue/WorkQueue";
 import QuickActions from "../components/quickActions/QuickActions";
 import PortfolioGoalsNivo from "../components/portfolioGoals/PortfolioGoalsNivo";
+import MarketIntelligence from "../components/MarketIntelligence/MarketIntelligence";
 
 function Dashboard() {
   return (
@@ -26,8 +27,8 @@ function Dashboard() {
             <div className="rounded-lg shadow-sm flex-1 bg-[#101827]">
               <QuickActions />
             </div>
-            <div className=" p-4 rounded-lg shadow-sm flex-1">
-              <QuickActions variant="secondary" />
+            <div className=" p-4 rounded-lg shadow-sm flex-1 bg-[#101827]">
+              <MarketIntelligence />
             </div>
           </div>
         </div>
