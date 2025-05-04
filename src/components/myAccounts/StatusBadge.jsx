@@ -1,4 +1,4 @@
-// src/components/StatusBadge.jsx
+
 export const StatusBadge = ({ status }) => {
   const statusColors = {
     "Under review": "bg-orange-100 text-orange-800",

@@ -1,5 +1,6 @@
 // src/components/AccountRow.jsx
 import { StatusBadge } from "./StatusBadge";
+import { ColorBadge } from "./ColorBadge";
 
 export const AccountRow = ({ account }) => (
   <tr className="hover:bg-gray-50 transition-colors">
@@ -14,25 +15,26 @@ export const AccountRow = ({ account }) => (
       {account.reviewDate}
     </td>
     <td className="px-6 py-4 whitespace-nowrap text-gray-500 font-medium">
+      {account.reviewDate}
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap text-gray-500">
       {account.premium}
     </td>
     <td className="px-6 py-4 whitespace-nowrap text-gray-500">
       {account.ratedPremium}
     </td>
     <td className="px-6 py-4 whitespace-nowrap text-gray-500">
-      {account.lossRatio}
+      <ColorBadge status={account.lossRatio} />
+    </td>
+    <td className="px-6 py-4 whitespace-nowrap">{account.appetite}</td>
+    <td className="px-6 py-4 whitespace-nowrap text-gray-500">
+      {account.status}
     </td>
     <td className="px-6 py-4 whitespace-nowrap text-gray-500">
-      {account.appetite}
-    </td>
-    <td className="px-6 py-4 whitespace-nowrap">
-      <StatusBadge status={account.status} />
+      {account.triage}
     </td>
     <td className="px-6 py-4 whitespace-nowrap text-gray-500">
-      {account.trade}
-    </td>
-    <td className="px-6 py-4 whitespace-nowrap text-gray-500">
-      {account.workability}
+      {account.winnability}
     </td>
   </tr>
 );
