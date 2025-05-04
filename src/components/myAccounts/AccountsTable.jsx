@@ -17,7 +17,7 @@ const columns = [
 ];
 
 export const AccountsTable = ({ data }) => (
-  <div className="rounded-lg shadow-sm">
+  <div className="rounded-lg shadow-sm ">
     <div className="flex justify-between items-center mb-6">
       <h1 className="text-2xl font-bold ">My Accounts</h1>
       <input
@@ -43,9 +43,13 @@ export const AccountsTable = ({ data }) => (
             ))}
           </tr>
         </thead>
-        <tbody className=" divide-y divide-gray-200">
-          {data.map((account) => (
-            <AccountRow key={account.id} account={account} />
+        <tbody className="divide-y divide-gray-200">
+          {data.map((account, index) => (
+            <AccountRow
+              key={account.id}
+              account={account}
+              className={index % 2 === 0 ? "bg-[#1a2332]" : "bg-[#202e4b]"}
+            />
           ))}
         </tbody>
       </table>

@@ -2,10 +2,10 @@
 import { StatusBadge } from "./StatusBadge";
 import { ColorBadge } from "./ColorBadge";
 
-export const AccountRow = ({ account }) => (
-  <tr className="hover:bg-gray-50 transition-colors">
+export const AccountRow = ({ account, className }) => (
+  <tr className={`hover:bg-[#1f2630] ${className || ""}`}>
     <td className="px-6 py-4 whitespace-nowrap">
-      <div className="font-medium text-gray-900">{account.accountName}</div>
+      <div className="font-medium">{account.accountName}</div>
       <div className="text-sm text-gray-500">{account.type}</div>
     </td>
     <td className="px-6 py-4 whitespace-nowrap text-gray-500">
