@@ -2,7 +2,7 @@ import WorkQueue from "../components/workQueue/WorkQueue";
 import QuickActions from "../components/quickActions/QuickActions";
 import PortfolioGoalsNivo from "../components/portfolioGoals/PortfolioGoalsNivo";
 import MarketIntelligence from "../components/marketIntelligence/MarketIntelligence";
-import AccountsTable from "../components/myAccounts/AccountsTable";
+import { AccountsPage } from "../components/myAccounts/AccountsPage";
 
 function Dashboard() {
   return (
@@ -36,8 +36,8 @@ function Dashboard() {
       </div>
 
       {/* Second row - full width */}
-      <div className="bg-white p-4 rounded-lg shadow-sm">
-        <AccountsTable/>
+      <div className=" rounded-lg shadow-sm p-4">
+        <AccountsPage />
       </div>
     </div>
   );
