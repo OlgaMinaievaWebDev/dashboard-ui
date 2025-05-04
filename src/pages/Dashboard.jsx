@@ -1,6 +1,6 @@
 import WorkQueue from "../components/workQueue/WorkQueue";
 import QuickActions from "../components/quickActions/QuickActions";
-import PortfolioGoals from "../components/portfolioGoals/PortfolioGoals";
+import PortfolioGoalsNivo from "../components/portfolioGoals/PortfolioGoalsNivo";
 
 function Dashboard() {
   return (
@@ -15,8 +15,10 @@ function Dashboard() {
         {/* Sidebar (40% total) */}
         <div className="md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-4">
           {/* Goals (20%) */}
-          <div className="md:col-span-2 p-4  rounded-lg shadow-sm flex flex-col">
-            <PortfolioGoals/>
+          <div className="md:col-span-2 h-full p-4">
+            <div className="h-full rounded-lg  shadow-sm bg-[#101827]">
+              <PortfolioGoalsNivo />
+            </div>
           </div>
 
           {/* Quick actions stacked (20%) */}
@@ -32,9 +34,7 @@ function Dashboard() {
       </div>
 
       {/* Second row - full width */}
-      <div className="bg-white p-4 rounded-lg shadow-sm">
-      
-      </div>
+      <div className="bg-white p-4 rounded-lg shadow-sm"></div>
     </div>
   );
 }
