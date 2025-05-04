@@ -3,7 +3,7 @@ import ProgressWithTargetNivo from "./ProgressWithTargetNivo";
 export default function PortfolioGoalsNivo() {
   return (
     <div className= "text-white rounded-2xl shadow-lg p-6 w-full max-w-md space-y-8 h-max">
-      <h2 className="text-xl font-semibold">Portfolio goals</h2>
+      <h2 className="text-xl">Portfolio goals</h2>
 
       <ProgressWithTargetNivo
         value={48.2}

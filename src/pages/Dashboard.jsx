@@ -22,9 +22,9 @@ function Dashboard() {
           </div>
 
           {/* Quick actions stacked (20%) */}
-          <div className="md:col-span-2 flex flex-col gap-4">
-            <div className=" p-4 rounded-lg shadow-sm flex-1">
-              <QuickActions variant="primary" />
+          <div className="md:col-span-2 flex flex-col gap-4 p-4">
+            <div className="rounded-lg shadow-sm flex-1 bg-[#101827]">
+              <QuickActions />
             </div>
             <div className=" p-4 rounded-lg shadow-sm flex-1">
               <QuickActions variant="secondary" />
