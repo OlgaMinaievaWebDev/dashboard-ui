@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { tabs, data } from "../../data/workQueue";
+import { tabs, data } from "../../../data/workQueue";
 import Tabs from "./Tabs";
 import TableHeader from "./TableHeader";
 import TableRow from "./TableRow";

@@ -1,7 +1,8 @@
 export const accounts = [
   {
     accountName: "NAMEX Tech Solutions",
-    type: "D&O Liability",
+    type: "Large Enterprise",
+    line: "D&O Liability",
     broker: "Willis Towers",
     reviewDate: "04/16/2025",
     premium: "$2.3M",
@@ -14,7 +15,8 @@ export const accounts = [
   },
   {
     accountName: "Alliance Healthcare Systems",
-    type: "Medical Malpractice",
+    type:"Mid-Market",
+    line: "Medical Malpractice",
     broker: "Aon Risk",
     reviewDate: "06/30/2025",
     premium: "$1.7M",
@@ -27,7 +29,8 @@ export const accounts = [
   },
   {
     accountName: "Maritime Logistics Corp",
-    type: "Marine Cargo",
+    type: "Shipping/Logistics",
+    line: "Marine Cargo",
     broker: "Marsh McLennan",
     reviewDate: "09/05/2025",
     premium: "$975K",
@@ -40,13 +43,14 @@ export const accounts = [
   },
   {
     accountName: "GreenField Energy Ltd",
-    type: "Environmental Liability",
+    type: "Energy Sector",
+    line: "Environmental Liability",
     broker: "Aon Risk",
     reviewDate: "07/22/2025",
     premium: "$1.2M",
     ratedPremium: "$1.4M",
     lossRatio: "67%",
-    appetite: "Cautious",
+    appetite: "CAUTIOUS",
     status: "Under review",
     triage: "158",
     winnability: "Medium",

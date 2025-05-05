@@ -1,8 +1,9 @@
-import WorkQueue from "../components/workQueue/WorkQueue";
-import QuickActions from "../components/quickActions/QuickActions";
-import PortfolioGoalsNivo from "../components/portfolioGoals/PortfolioGoalsNivo";
-import MarketIntelligence from "../components/marketIntelligence/MarketIntelligence";
-import { AccountsPage } from "../components/myAccounts/AccountsPage";
+import WorkQueue from "../components/dashboard/workQueue/WorkQueue";
+import QuickActions from "../components/dashboard/quickActions/QuickActions";
+import PortfolioGoalsNivo from "../components/dashboard/portfolioGoals/PortfolioGoalsNivo";
+import MarketIntelligence from "../components/dashboard/marketIntelligence/MarketIntelligence";
+import { AccountsPage } from "../components/dashboard/myAccounts/AccountsPage";
+
 
 function Dashboard() {
   return (

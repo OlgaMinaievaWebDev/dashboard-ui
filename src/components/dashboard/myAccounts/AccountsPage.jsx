@@ -1,6 +1,6 @@
 // src/pages/AccountsPage.jsx
 
-import { accounts } from "../../data/myAccounts";
+import { accounts } from "../../../data/myAccounts";
 import { AccountsTable } from "./AccountsTable";
 
 export const AccountsPage = () => {

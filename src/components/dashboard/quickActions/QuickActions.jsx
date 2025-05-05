@@ -1,4 +1,4 @@
-import { tabs } from "../../data/quickAction";
+import { tabs } from "../../../data/quickAction";
 import Tabs from "./Tabs";
 
 function QuickActions() {

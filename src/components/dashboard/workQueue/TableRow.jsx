@@ -1,6 +1,6 @@
 import { MoreVertical } from "lucide-react";
 import StatusDot from "./StatusDot";
-import { statusColors } from "../../data/workQueue";
+import { statusColors } from "../../../data/workQueue";
 
 export default function TableRow({ row, className = "" }) {
   return (
@@ -24,7 +24,7 @@ export default function TableRow({ row, className = "" }) {
       </td>
       <td className="px-2 py-3">{row.date}</td>
       <td className="px-2 py-3 text-right">
-        <MoreVertical size={16} />
+        <MoreVertical className="p-1 rounded-full w-7 h-7 border border-white" />
       </td>
     </tr>
   );
