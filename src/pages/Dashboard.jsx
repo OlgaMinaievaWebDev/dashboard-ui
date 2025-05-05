@@ -10,21 +10,21 @@ function Dashboard() {
       {/* First row */}
       <div className="grid grid-cols-1 md:grid-cols-10 gap-4">
         {/* Main content (60%) */}
-        <div className="md:col-span-6 p-4  rounded-lg shadow-sm">
+        <div className="md:col-span-6 bg-[#101827]  rounded-lg shadow-sm">
           <WorkQueue />
         </div>
 
         {/* Sidebar (40% total) */}
         <div className="md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-4">
           {/* Goals (20%) */}
-          <div className="md:col-span-2 h-full p-4">
+          <div className="md:col-span-2 h-full">
             <div className="h-full rounded-lg  shadow-sm bg-[#101827]">
               <PortfolioGoalsNivo />
             </div>
           </div>
 
           {/* Quick actions stacked (20%) */}
-          <div className="md:col-span-2 flex flex-col gap-4 p-4">
+          <div className="md:col-span-2 flex flex-col gap-4">
             <div className="rounded-lg shadow-sm flex-1 bg-[#101827]">
               <QuickActions />
             </div>
