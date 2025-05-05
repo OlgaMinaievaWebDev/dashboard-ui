@@ -1,7 +1,9 @@
+import Header from "../components/accounts/Header"
+
 function Account() {
  return (
   <div>
-   <h1>I am an Account</h1>
+   <Header/>
   </div>
  )
 }
