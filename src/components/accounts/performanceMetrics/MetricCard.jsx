@@ -36,3 +36,6 @@ function MetricCard({
     </div>
   );
 }
+
+
+export default MetricCard;
