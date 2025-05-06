@@ -4,6 +4,7 @@ import PerformanceMetrics from "../components/accounts/performanceMetrics/Perfor
 import Policies from "../components/accounts/policiesSection/Policies";
 import AccountDetails from "../components/accounts/AccountDetails";
 import InboxView from "../components/accounts/InboxView";
+import StatusSection from "../components/accounts/accountStatus/StatusSection";
 
 function Account() {
  return (
@@ -18,8 +19,8 @@ function Account() {
      </div>
    <PerformanceMetrics />
    <Policies />
-   <AccountDetails />
-   <InboxView/>
+   <StatusSection/>
+  
    </>
  );
 }
