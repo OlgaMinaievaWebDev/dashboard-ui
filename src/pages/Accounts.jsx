@@ -1,6 +1,6 @@
 import Header from "../components/accounts/Header"
 import AttentionBanner from "../components/accounts/AttentionBanner";
-import PerformanceMetrics from "../components/accounts/PerformanceMetrics";
+import PerformanceMetrics from "../components/accounts/performanceMetrics/PerformanceMetrics";
 import Policies from "../components/accounts/Policies";
 import AccountDetails from "../components/accounts/AccountDetails";
 import InboxView from "../components/accounts/InboxView";
