@@ -20,7 +20,7 @@ export function WinnabilityList({ title, icon, color, items }) {
               <div className="flex flex-col w-11/12">
                 <span className="text-sm text-white mb-2">{label}</span>
                 <div className="flex items-center w-full">
-                  <div className="flex-1 bg-gray-700 h-2 rounded-full overflow-hidden">
+                  <div className="flex-1 bg-gray-700 h-4                  rounded-full overflow-hidden">
                     <div
                       className={`h-full ${color}`}
                       style={{ width: `${Math.abs(parseInt(value))}%` }}
