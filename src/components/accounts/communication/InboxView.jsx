@@ -7,7 +7,7 @@ function InboxView() {
   return (
     <div className="min-h-screen text-white mt-10">
       <h2 className="text-3xl mb-5">Communication</h2>
-      <div className="bg-[#0F111D] text-white rounded-2xl p-4 space-y-4">
+      <div className="bg-[#0F172A] text-white rounded-2xl p-4 space-y-4">
         <div className="flex justify-start gap-4 mb-4">
           <SearchBar />
           <ButtonGroup />

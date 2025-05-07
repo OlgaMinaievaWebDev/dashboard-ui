@@ -32,9 +32,9 @@ export const AccountsTable = ({ data }) => (
       <table className="min-w-full divide-y divide-gray-200">
         <thead>
           <tr>
-            {columns.map((column) => (
+            {columns.map((column, index) => (
               <th
-                key={column}
+                key={`column-${index}`}
                 scope="col"
                 className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
               >

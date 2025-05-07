@@ -3,9 +3,9 @@ import AttentionBanner from "../components/accounts/AttentionBanner";
 import PerformanceMetrics from "../components/accounts/performanceMetrics/PerformanceMetrics";
 import Policies from "../components/accounts/policiesSection/Policies";
 import AccountDetails from "../components/accounts/accountDetails/AccountDetails";
-
 import StatusSection from "../components/accounts/accountStatus/StatusSection";
 import InboxView from "../components/accounts/communication/InboxView";
+
 
 function Account() {
  return (
@@ -23,6 +23,7 @@ function Account() {
    <StatusSection/>
    <AccountDetails />
 <InboxView/>
+   
    </>
  );
 }
