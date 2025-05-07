@@ -1,10 +1,10 @@
-import { CheckCircle } from "lucide-react";
+import { Rocket} from "lucide-react";
 
 export function RecommendationCard({ recommendations }) {
   return (
     <div className="bg-[#1E293B] p-6 rounded-xl space-y-4">
-      <div className="flex items-center text-green-400 font-semibold text-sm">
-        <CheckCircle className="mr-2" />
+      <div className="flex items-center text-green-400 font-semibold text-lg">
+        <Rocket className="mr-2" />
         AI-Powered Recommendations
       </div>
       <div className="space-y-4 text-sm">
@@ -14,7 +14,7 @@ export function RecommendationCard({ recommendations }) {
               <p>{title}</p>
               <p className="text-gray-400">{details}</p>
             </div>
-            <button className="bg-green-500 text-black px-4 py-1 rounded-lg self-start">
+            <button className="bg-green-500 text-black text-lg px-12 py-4 rounded-4xl self-start">
               Apply
             </button>
           </div>

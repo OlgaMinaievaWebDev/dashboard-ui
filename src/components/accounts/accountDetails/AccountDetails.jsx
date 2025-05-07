@@ -1,9 +1,9 @@
 import SidebarMenu from "./SidebarMenu";
 import { ScoreCard } from "./ScoreCard";
 import { TrendChart } from "./TrendChart";
-import PositionProgressAccount from "./PositionProgressAccount";
 import { WinnabilityList } from "./WinnabilityList";
 import { RecommendationCard } from "./RecommendationCard";
+import PositionProgressAccount from "./PositionProgressAccount";
 import { ArrowDownCircle, ArrowUpCircle } from "lucide-react";
 
 const data = [
@@ -29,7 +29,7 @@ export default function AccountDetails() {
               description="Very Strong"
             />
             <TrendChart data={data} />
-            <PositionProgressAccount/>
+            <PositionProgressAccount />
           </div>
           <div className="grid grid-cols-2 gap-4">
             <WinnabilityList
