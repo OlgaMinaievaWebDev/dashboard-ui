@@ -16,7 +16,7 @@ const data = [
 
 export default function AccountDetails() {
   return (
-    <div className="min-h-screen  text-white font-sans mt-10">
+    <div className="min-h-screen  text-white mt-10">
       <h2 className="text-3xl mb-5 ">Account Details</h2>
       <div className="flex space-x-4 bg-[#0F172A] rounded-lg shadow-sm p-6">
         <SidebarMenu />

@@ -1,6 +1,6 @@
 import { Paperclip } from "lucide-react";
 
-function MessageCard({
+function MessageCardOld({
   title,
   author,
   date,
@@ -47,4 +47,4 @@ function MessageCard({
   );
 }
 
-export default MessageCard;
+export default MessageCardOld;
