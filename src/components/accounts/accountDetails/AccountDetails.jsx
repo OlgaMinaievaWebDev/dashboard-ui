@@ -7,11 +7,11 @@ import { RecommendationCard } from "./RecommendationCard";
 import { ArrowDownCircle, ArrowUpCircle } from "lucide-react";
 
 const data = [
-  { name: "Jan", score: 78 },
-  { name: "Feb", score: 76 },
-  { name: "Mar", score: 79 },
-  { name: "Apr", score: 81 },
-  { name: "Now", score: 82 },
+  { name: "Jan", score: 8 },
+  { name: "Feb", score: 46 },
+  { name: "Mar", score: 19 },
+  { name: "Apr", score: 61 },
+  { name: "Now", score: 80 },
 ];
 
 export default function AccountDetails() {

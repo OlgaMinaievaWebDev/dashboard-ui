@@ -1,6 +1,6 @@
 export function ScoreCard({ title, value, description }) {
   return (
-    <div className="bg-[#1E293B] p-4 rounded-xl flex flex-col justify-between">
+    <div className="bg-[#1E293B] p-4 rounded-xl flex flex-col  gap-4 ">
       <h2 className="text-xl">{title}</h2>
       <div className="flex items-center gap-2">
         <p className="text-4xl font-bold">{value}</p>
