@@ -16,13 +16,15 @@ const data = [
 
 export default function AccountDetails() {
   return (
-    <div className="min-h-screen  text-white mt-10">
-      <h2 className="text-3xl mb-5 ">Account Details</h2>
-      <div className="flex space-x-4 bg-[#0F172A] rounded-lg shadow-sm p-6">
+    <div className="min-h-screen text-white mt-10">
+      <h2 className="text-3xl mb-5">Account Details</h2>
+      <div className="flex flex-col md:flex-row md:space-x-4 bg-[#0F172A] rounded-lg shadow-sm p-6">
         <SidebarMenu />
         <main className="flex-1 space-y-6">
           <h1 className="text-3xl font-semibold">Winnability</h1>
-          <div className="grid grid-cols-3 gap-4">
+
+          {/* Grid for ScoreCard, TrendChart, PositionProgressAccount */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <ScoreCard
               title="Overall Score"
               value="82%"
@@ -31,7 +33,9 @@ export default function AccountDetails() {
             <TrendChart data={data} />
             <PositionProgressAccount />
           </div>
-          <div className="grid grid-cols-2 gap-4">
+
+          {/* Grid for Winnability Lists */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <WinnabilityList
               title="Increasing Winnability"
               icon={<ArrowUpCircle className="text-green-400" />}
@@ -55,6 +59,8 @@ export default function AccountDetails() {
               ]}
             />
           </div>
+
+          {/* Recommendations */}
           <RecommendationCard
             recommendations={[
               {

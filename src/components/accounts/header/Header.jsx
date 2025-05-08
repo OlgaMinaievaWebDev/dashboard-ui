@@ -1,4 +1,4 @@
-import logoImg from "../../assets/Ship-Logo.jpg";
+import logoImg from "../../../assets/Ship-Logo.jpg";
 
 
 function Header() {
