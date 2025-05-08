@@ -1,4 +1,4 @@
-import SidebarMenu from "./SidebarMenu";
+import SideBarMenu from "./SideBarMenu";
 import { ScoreCard } from "./ScoreCard";
 import { TrendChart } from "./TrendChart";
 import { WinnabilityList } from "./WinnabilityList";
