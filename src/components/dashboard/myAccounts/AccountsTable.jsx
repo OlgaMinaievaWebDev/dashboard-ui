@@ -1,4 +1,3 @@
-// src/components/AccountsTable.jsx
 import { TableActions } from "./TableActions";
 import { AccountRow } from "./AccountRow";
 
@@ -34,7 +33,7 @@ export const AccountsTable = ({ data }) => (
           <tr>
             {columns.map((column, index) => (
               <th
-                key={`column-${index}`}
+                key={`column-${index}-${column}`} // Combine column index and name for uniqueness
                 scope="col"
                 className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
               >
@@ -46,7 +45,7 @@ export const AccountsTable = ({ data }) => (
         <tbody className="divide-y divide-gray-200">
           {data.map((account, index) => (
             <AccountRow
-              key={account.id}
+              key={account.id ? account.id : `account-${index}`} // Use account.id if unique, otherwise fallback to index
               account={account}
               className={index % 2 === 0 ? "bg-[#1a2332]" : "bg-[#202e4b]"}
             />
