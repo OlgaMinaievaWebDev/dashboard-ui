@@ -1,4 +1,4 @@
-export default function SidebarMenu() {
+function SidebarMenu() {
   return (
     <aside className=" w-80  p-4 space-y-6 border-r border-dashed border-gray-400">
       {/* DECISION SUPPORT section inside a box */}
@@ -49,3 +49,4 @@ export default function SidebarMenu() {
     </aside>
   );
 }
+export default SidebarMenu;
