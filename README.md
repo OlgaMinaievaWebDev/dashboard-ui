@@ -1,12 +1,81 @@
-# React + Vite
+# 🧪 Test Assignment: Dashboard & Account Interface (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This project implements the **Dashboard** and **Account** screens using **React**, based on the provided UI screenshots. It follows best practices in component structuring, responsive design, and interactive UI development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Dashboard Page
+- Navigation bar with active tab highlighting  
+- Work Queue section with tabs and data table  
+- Portfolio Goals with progress indicators  
+- Quick Actions with interactive buttons  
+- Market Intelligence displaying news  
+- My Accounts table with filtering, status, and color indicators  
 
-## Expanding the ESLint configuration
+### Account Page
+- Header with account information  
+- Performance Metrics  
+- Policies  
+- Account Status & Compliance  
+- Winnability section with charts and AI recommendations  
+- Communication section (messages, attachments)  
+- Policies Table  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+- **React** with **Vite**
+- **Tailwind CSS** for styling
+- **React Router** for page navigation
+- **Chart.js** or **Recharts** for visualizations
+- **Mock JSON data** for simulating API responses
+- **Responsive Design** for desktop and tablet views
+- **Hosting** via Vercel Hosting Platform]
+
+---
+
+## 🤖 AI & Assistive Tools Used
+
+- **ChatGPT** – For architecture guidance and component planning
+- **VS Code Extensions** – Tailwind IntelliSense, ESLint, Prettier
+
+---
+
+## 💡 Key Features
+
+- Reusable, modular component structure
+- Tab switching and active state highlighting
+- Expandable content on icon click
+- Color-coded status indicators
+- Fully responsive layout (tablet and desktop)
+- JSON-driven mock data integration
+
+---
+
+## 🌐 Live Demo
+
+- 🔗 **Live App**: [your-live-link-here]  
+
+---
+
+## 🧩 Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# 2. Navigate into the project directory
+cd your-repo-name
+
+# 3. Install dependencies
+npm install
+# or
+yarn install
+
+
+## 🧩 Usage
+# Start the development server
+npm run dev
+# or
+yarn dev
