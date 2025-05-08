@@ -1,5 +1,8 @@
 # 🧪 Test Assignment: Dashboard & Account Interface (React)
 
+## Live
+https://dashboard-1d2twg7zj-olgas-projects-629b5cf3.vercel.app/
+
 ## 📌 Overview
 
 This project implements the **Dashboard** and **Account** screens using **React**, based on the provided UI screenshots. It follows best practices in component structuring, responsive design, and interactive UI development.
