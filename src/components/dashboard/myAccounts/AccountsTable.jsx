@@ -28,16 +28,16 @@ export const AccountsTable = ({ data }) => (
     </div>
 
     <div className="overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-200">
+      <table className="w-full table-auto divide-y divide-gray-200 text-sm">
         <thead>
           <tr>
             {columns.map((column, index) => (
               <th
-                key={`column-${index}-${column}`} // Combine column index and name for uniqueness
+                key={`column-${index}-${column}`}
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
+                className="px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide whitespace-nowrap"
               >
-                {column}
+                <span className="block truncate max-w-[120px]">{column}</span>
               </th>
             ))}
           </tr>
@@ -45,7 +45,7 @@ export const AccountsTable = ({ data }) => (
         <tbody className="divide-y divide-gray-200">
           {data.map((account, index) => (
             <AccountRow
-              key={account.id ? account.id : `account-${index}`} // Use account.id if unique, otherwise fallback to index
+              key={account.id ?? `account-${index}`}
               account={account}
               className={index % 2 === 0 ? "bg-[#1a2332]" : "bg-[#202e4b]"}
             />
