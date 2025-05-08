@@ -2,7 +2,7 @@ import { useRef } from "react";
 import TabsContainer from "./TabsContainer";
 import ScrollButtons from "./ScrollButtons";
 
-export default function Navbar() {
+ function Navbar() {
   const scrollRef = useRef(null);
 
   const scroll = (dir) => {
@@ -23,3 +23,4 @@ export default function Navbar() {
     </div>
   );
 }
+export default Navbar;
