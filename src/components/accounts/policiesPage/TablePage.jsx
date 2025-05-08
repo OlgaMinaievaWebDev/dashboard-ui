@@ -140,7 +140,7 @@ export const TablePage = () => {
         <AccountsTable
           data={dataWithTotals}
           columns={customColumns}
-          title="Policy Review"
+          title=""
         />
       </div>
     </div>
