@@ -51,6 +51,7 @@ export const AccountsTable = ({
             <AccountRow
               key={account.id || index}
               account={account}
+              columns={columns}
               className={index % 2 === 0 ? "bg-[#1a2332]" : "bg-[#202e4b]"}
             />
           ))}

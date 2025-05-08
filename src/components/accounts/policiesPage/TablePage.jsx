@@ -1,4 +1,5 @@
 import { AccountsTable } from "../../dashboard/myAccounts/AccountsTable";
+
 const otherData = [
   {
     id: 1,
@@ -14,10 +15,10 @@ const otherData = [
     triage: "High",
     winnability: "Very Strong",
   },
-  // ... more data items
+  // ... more data
 ];
 
-const otherColumns = [
+const customColumns = [
   "LINE",
   "EFF.DATE",
   "EXP.DATE",
@@ -26,24 +27,39 @@ const otherColumns = [
   "EXPIRING PREMIUM",
   "RENEWAL TO TECH",
   "RENEWAL TECH",
- "RENEWAL PREMIUM",
+  "RENEWAL PREMIUM",
   "RATE CHANGE",
   "LOSS RATIO",
- 
+  "ACTIONS",
 ];
 
-export const OtherDataPage = () => {
+const transformedData = otherData.map((item) => ({
+  id: item.id,
+  line: item.name,
+  effDate: item.type, // Note: You might want to use a different field here
+  expDate: item.expirationDate,
+  status: item.status,
+  expiringTech: item.currentPremium,
+  expiringPremium: item.currentPremium,
+  renewalToTech: item.proposedPremium,
+  renewalTech: item.proposedPremium,
+  renewalPremium: item.proposedPremium,
+  rateChange: item.winnability,
+  lossRatio: item.lossRatio,
+}));
+
+export const TablePage = () => {
   return (
     <div className="p-4 md:p-8 bg-[#101827]">
       <div className="mx-auto">
         <AccountsTable
-          data={otherData}
-          columns={otherColumns}
-          title="Policy Review"
+          data={transformedData}  
+          columns={customColumns}
+        title=""
         />
       </div>
     </div>
   );
 };
 
-export default OtherDataPage;
+export default TablePage;
