@@ -3,7 +3,7 @@ import { AccountsTable } from "../../dashboard/myAccounts/AccountsTable";
 const otherData = [
   {
     id: 1,
-    name: "Marine Cargo",
+    name: "🚢 Marine Cargo",
     type: "6/30/2026",
     coverage: "6/30/2027",
     broker: "Active",
@@ -17,7 +17,7 @@ const otherData = [
   },
   {
     id: 2,
-    name: "General Liability",
+    name: "🛡️ General Liability",
     type: "6/30/2026",
     coverage: "6/30/2027",
     broker: "Active",
@@ -31,7 +31,7 @@ const otherData = [
   },
   {
     id: 3,
-    name: "Workers Corp",
+    name: "🔰 Workers Corp",
     type: "Pending",
     coverage: "Pending",
     broker: "Pending",
@@ -45,7 +45,7 @@ const otherData = [
   },
   {
     id: 4,
-    name: "Umbrella",
+    name: " 🔰 Umbrella",
     type: "13/03/2026",
     coverage: "13/03/2027",
     broker: "Active",
