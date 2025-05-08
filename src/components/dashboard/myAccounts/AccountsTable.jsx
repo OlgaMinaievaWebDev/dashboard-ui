@@ -13,6 +13,7 @@ const defaultColumns = [
   "STATUS",
   "TRIAGE",
   "WINNABILITY",
+  "ACTIONS",
 ];
 
 export const AccountsTable = ({
@@ -39,9 +40,11 @@ export const AccountsTable = ({
               <th
                 key={`column-${index}`}
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
+                className={`px-6 py-3 text-xs font-medium uppercase tracking-wider ${
+                  column === "ACTIONS" ? "text-right" : "text-left"
+                }`}
               >
-                {column}
+                {column === "ACTIONS" ? "" : column}
               </th>
             ))}
           </tr>

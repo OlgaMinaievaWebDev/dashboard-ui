@@ -27,8 +27,10 @@ const getValue = (account, key) => {
     "RENEWAL TECH": account.renewalTech,
     "RENEWAL PREMIUM": account.renewalPremium,
     "RATE CHANGE": account.rateChange,
-    ACTIONS: (
-      <MoreVertical className="p-1 rounded-full w-7 h-7 border border-white" />
+    "ACTIONS": (
+      <div className="flex justify-end">
+        <MoreVertical className="w-5 h-5 text-white cursor-pointer" />
+      </div>
     ),
   };
 
