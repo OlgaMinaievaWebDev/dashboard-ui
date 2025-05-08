@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import Navbar from "./navbar/Navbar.jsx";
+import NewNavbar from "./navbar/NewNavbar";
+
 
 
 function Layout() {
@@ -8,7 +9,7 @@ function Layout() {
     <div className="min-h-screen flex flex-col bg-oxford-blue text-white px-12 py-6">
       <Header />
       <div className="px-4 py-2">
-       <Navbar/>
+      <NewNavbar/>
       </div>
       <main className="flex-grow p-6">
         <Outlet />
