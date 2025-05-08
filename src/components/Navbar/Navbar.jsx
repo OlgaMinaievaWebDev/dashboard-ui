@@ -22,5 +22,7 @@ import ScrollButtons from "./ScrollButtons";
       </div>
     </div>
   );
-}
+ }
+
+ 
 export default Navbar;

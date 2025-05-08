@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import Navbar from "./navbar/Navbar"
+import Navbar from "src/components/navbar/Navbar";
 
 
 function Layout() {
