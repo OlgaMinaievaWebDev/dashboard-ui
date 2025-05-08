@@ -19,7 +19,7 @@ export default function AccountDetails() {
     <div className="min-h-screen text-white mt-10">
       <h2 className="text-3xl mb-5">Account Details</h2>
       <div className="flex flex-col md:flex-row md:space-x-4 bg-[#0F172A] rounded-lg shadow-sm p-6">
-        <SidebarMenu />
+        <SideBarMenu />
         <main className="flex-1 space-y-6">
           <h1 className="text-3xl font-semibold">Winnability</h1>
 
