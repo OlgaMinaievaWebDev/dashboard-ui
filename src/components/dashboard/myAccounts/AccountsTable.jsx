@@ -1,7 +1,7 @@
 import { TableActions } from "./TableActions";
 import { AccountRow } from "./AccountRow";
 
-const columns = [
+const defaultColumns = [
   "ACCOUNT NAME/TYPE",
   "LINE",
   "BROKER",
@@ -15,10 +15,14 @@ const columns = [
   "WINNABILITY",
 ];
 
-export const AccountsTable = ({ data }) => (
+export const AccountsTable = ({
+  data,
+  columns = defaultColumns,
+  title = "My Accounts",
+}) => (
   <div className="rounded-lg shadow-sm ">
     <div className="flex justify-between items-center mb-6">
-      <h1 className="text-2xl font-bold ">My Accounts</h1>
+      <h1 className="text-2xl font-bold ">{title}</h1>
       <input
         type="text"
         placeholder="Search"
@@ -28,16 +32,16 @@ export const AccountsTable = ({ data }) => (
     </div>
 
     <div className="overflow-x-auto">
-      <table className="w-full table-auto divide-y divide-gray-200 text-sm">
+      <table className="min-w-full divide-y divide-gray-200">
         <thead>
           <tr>
             {columns.map((column, index) => (
               <th
-                key={`column-${index}-${column}`}
+                key={`column-${index}`}
                 scope="col"
-                className="px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide whitespace-nowrap"
+                className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
               >
-                <span className="block truncate max-w-[120px]">{column}</span>
+                {column}
               </th>
             ))}
           </tr>
@@ -45,7 +49,7 @@ export const AccountsTable = ({ data }) => (
         <tbody className="divide-y divide-gray-200">
           {data.map((account, index) => (
             <AccountRow
-              key={account.id ?? `account-${index}`}
+              key={account.id || index}
               account={account}
               className={index % 2 === 0 ? "bg-[#1a2332]" : "bg-[#202e4b]"}
             />
