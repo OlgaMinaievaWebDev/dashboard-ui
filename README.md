@@ -31,7 +31,7 @@ This project implements the **Dashboard** and **Account** screens using **React*
 - **Chart.js** or **Recharts** for visualizations
 - **Mock JSON data** for simulating API responses
 - **Responsive Design** for desktop and tablet views
-- **Hosting** via Vercel Hosting Platform]
+- **Hosting** via Vercel Hosting Platform
 
 ---
 
