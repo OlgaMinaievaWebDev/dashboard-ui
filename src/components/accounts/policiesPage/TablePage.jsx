@@ -57,7 +57,6 @@ const otherData = [
     triage: "10%",
     winnability: "78%",
   },
-  // ... more data
 ];
 
 const customColumns = [
@@ -78,7 +77,7 @@ const customColumns = [
 const transformedData = otherData.map((item) => ({
   id: item.id,
   line: item.name,
-  effDate: item.type, // Note: You might want to use a different field here
+  effDate: item.type,
   expDate: item.coverage,
   status: item.broker,
   expiringTech: item.expirationDate,
@@ -91,13 +90,57 @@ const transformedData = otherData.map((item) => ({
 }));
 
 export const TablePage = () => {
+  const tableData = transformedData;
+
+  const parseNumber = (value) =>
+    parseFloat(value?.toString().replace(/[^0-9.-]/g, "")) || 0;
+
+  const formatCurrency = (value) =>
+    "$" + value.toLocaleString(undefined, { minimumFractionDigits: 0 });
+
+  const safeAverage = (key) => {
+    const values = tableData
+      .map((item) => parseFloat(item[key]?.toString().replace(/[^0-9.-]/g, "")))
+      .filter((v) => !isNaN(v));
+    const avg = values.reduce((sum, v) => sum + v, 0) / (values.length || 1);
+    return avg.toFixed(1) + "%";
+  };
+
+  const calculateTotals = () => {
+    const totals = {
+      id: "totals",
+      line: "TOTALS",
+      effDate: "",
+      expDate: "",
+      status: "",
+    };
+
+    // Sum numeric columns
+    const sumColumn = (key) =>
+      tableData.reduce((sum, item) => sum + parseNumber(item[key]), 0);
+
+    totals.expiringTech = formatCurrency(sumColumn("expiringTech"));
+    totals.expiringPremium = formatCurrency(sumColumn("expiringPremium"));
+    totals.renewalToTech = formatCurrency(sumColumn("renewalToTech"));
+    totals.renewalTech = formatCurrency(sumColumn("renewalTech"));
+    totals.renewalPremium = formatCurrency(sumColumn("renewalPremium"));
+
+    totals.rateChange = safeAverage("rateChange");
+    totals.lossRatio = safeAverage("lossRatio");
+
+    return totals;
+  };
+
+  const totalsRow = calculateTotals();
+  const dataWithTotals = [...tableData, totalsRow];
+
   return (
-    <div className="p-4 md:p-8 bg-[#101827]">
+    <div className="p-4 md:p-8 bg-[#101827] min-h-screen">
       <div className="mx-auto">
         <AccountsTable
-          data={transformedData}  
+          data={dataWithTotals}
           columns={customColumns}
-        title=""
+          title="Policy Review"
         />
       </div>
     </div>
