@@ -1,7 +1,7 @@
 # 🧪 Test Assignment: Dashboard & Account Interface (React)
 
 ## Live
-https://dashboard-1d2twg7zj-olgas-projects-629b5cf3.vercel.app/
+https://dashboard-ui-iota-swart.vercel.app/accounts
 
 ## 📌 Overview
 
